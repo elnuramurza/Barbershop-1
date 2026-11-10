@@ -1,0 +1,6 @@
+{
+  "name": "ORDEN Barbershop Bishkek",
+  "description": "Премиальное мужское пространство в Бишкеке: авторские стрижки, моделирование бороды, королевское бритье и клубный бар.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

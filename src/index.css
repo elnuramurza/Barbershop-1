@@ -1,0 +1,70 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-display: "Cinzel", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  --color-gold-50: #fbf8f0;
+  --color-gold-100: #f5eed8;
+  --color-gold-200: #ebdcaf;
+  --color-gold-300: #dfc480;
+  --color-gold-400: #d4ab53;
+  --color-gold-500: #c69431;
+  --color-gold-600: #a77524;
+  --color-gold-700: #7d541e;
+  --color-charcoal-900: #0d0f12;
+  --color-charcoal-800: #14171d;
+  --color-charcoal-700: #1b2028;
+  --color-charcoal-600: #252b36;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-family: var(--font-sans);
+  background-color: #0b0d10;
+  color: #f3f4f6;
+}
+
+::selection {
+  background-color: #c69431;
+  color: #0d0f12;
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0f12;
+}
+::-webkit-scrollbar-thumb {
+  background: #252b36;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c69431;
+}
+
+/* Leaflet dark/gold custom popup */
+.leaflet-popup-content-wrapper {
+  background: #14171d !important;
+  color: #f3f4f6 !important;
+  border: 1px solid #2a313d !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.7) !important;
+}
+.leaflet-popup-tip {
+  background: #14171d !important;
+}
+.leaflet-popup-close-button {
+  color: #9ca3af !important;
+}
+.leaflet-popup-close-button:hover {
+  color: #d4ab53 !important;
+}
+.custom-leaflet-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
